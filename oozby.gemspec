@@ -12,10 +12,10 @@ Gem::Specification.new do |s|
   s.license = 'LGPL-3'
   s.executables << 'oozby'
   s.required_ruby_version = '>= 2.0.0'
-  
+
   s.rdoc_options << '--main' << 'lib/oozby/base.rb'
-  
-  s.add_dependency 'listen', '< 2.0.0' # monitor filesystem for changes - used by cli app to automatically rebuild on changes
+
+  s.add_dependency 'listen', '< 1.10' # monitor filesystem for changes - used by cli app to automatically rebuild on changes
   s.add_dependency 'thor', '>= 0.18.1' # cli stuff for command line app
   s.add_dependency 'amatch', '>= 0.2.11' # string comparison tools for "Did you mean x()?" compiler suggestions
   #s.add_dependency 'colorist', '>= 0.0.2' # parses html style colours. Maybe should add this to 'color' function?
